@@ -133,8 +133,8 @@ nav {
   align-items: center;
   margin-bottom: 48px;
   padding: 16px 24px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
+  background: hsl(0, 90%, 45%);
+  border: 1px solid hsla(18, 99%, 41%, 0.783);
   border-radius: 12px;
 }
 
@@ -169,7 +169,7 @@ nav h1 {
 
 .nav-li a:hover {
   background: #000;
-  color: #fff;
+  color: #6e2f2fcc;
 }
 
 nav {
@@ -178,7 +178,7 @@ nav {
 }
 
 nav h1 {
-  color: #e94560;
+  color: #c60928;
 }
 
 .nav-li a {
@@ -188,4 +188,56 @@ nav h1 {
 .nav-li a:hover {
   background: #e94560;
   color: #fff;
+}
+/* Portfolio styles */
+.content h1 {
+  color: black;
+}
+
+#portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#portfolio li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#portfolio a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #444;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #ce0404ec;
+  border: 1px solid #f30c0c91;
+  border-radius: 12px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+#portfolio a:hover {
+  background: #000;
+  color: #eb0b0b;
+  transform: translateX(4px);
+}
+
+#portfolio a::after {
+  content: "->";
+  font-size: 0.85rem;
+  opacity: 0.4;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+#portfolio a:hover::after {
+  opacity: 1;
 }
